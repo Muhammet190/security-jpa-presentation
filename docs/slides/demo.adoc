@@ -1,0 +1,43 @@
+= Security JPA
+Muhammet Batuhan Oezdogan
+1.0.0, 2022-01-01
+ifndef::sourcedir[:sourcedir: ../src/main/java]
+ifndef::imagesdir[:imagesdir: images]
+ifndef::backend[:backend: html5]
+:icons: font
+ifndef::imagesdir[:imagesdir: ../images]
+
+//image::img.png[]
+
+== Problem
+
+* Die Entwicklung von Softwareanwendungen mit Sicherheitsanforderungen kann ein umständlicher und fehleranfälliger Prozess sein.
+* Die Sicherheit ist oft über den gesamten Anwendungscode verteilt.
+* Dies macht es schwierig zu verstehen, wie die Dinge funktionieren, und es ist schwierig, die Sicherheit in solchem Code aufrechtzuerhalten.
+
+== Was ist JPA Security
+
+* ist eine Access Control Lösung für objektrelationale Datenbankzugriffe über die Java Persistence API.
+* JPA Security ist ein rein deklarativer Ansatz und kann per Annotationen oder auch XML konfiguriert werden.
+
+== Wieso JPA Security (Eigenschaften)
+
+
+[cols="1"]
+|===
+| Zugriffskontrolle und das Ausfiltern findet in der Datenbank statt.
+| Sicherheitsrelavanter Code kann aus der Geschäftslogik entfernt werden(wird per Annotationen oder auch XML konfiguriert).
+
+| Integration für Java EE Security und andere Frameworks
+| Einfache Erweiterbarkeit
+
+|===
+
+== Wie funktioniert JPA Security
+* In der aktuellen Version von JPA Security entspricht eine Sicherheitseinheit direkt einer Persistenzeinheit von JPA.
+* Im Gegensatz zur Security Unit beginnt der Sicherheitskontext zur Laufzeit mit der Authentifizierung eines Benutzers.
+* Der Inhalt dieses Kontextes ist komplett anpassbar und Sie können dies durch Implementierung der SecurityContext-Schnittstelle tun.
+
+== Code Beispiel folgt ...
+
+
